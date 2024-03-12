@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+#form-cadastro{
+    background-color: white;
+    text-align: center;
+    width: 22%;
+    height: 64%;
+    margin-top: 7%;
+}
+/* img////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+img{
+    margin: 10% auto;
+    width: 120px;
+}
+/* inputs////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.grupo-input{
+    margin: auto auto;
+    width: max-content;
+    display: flex;
+}
+.grupo-input input{
+    background-color: transparent;
+    margin-bottom: 20%;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+.grupo-input input:focus{
+    outline: none;
+}
+/* botao//////////////////////////////////////////////////////////////////////////////////////////////////// */
+.botao-enviar{
+    width: 70px;
+    height: 40px;
+    margin-bottom:10%;
+    color: white;
+    background-color: rgb(132, 206, 22);
+    border: none;
+    outline: none;
+}
+.botao-enviar:hover{
+    background-color: rgb(187, 187, 3);
+}
+/* span////////////////////////////////////////////////////////////////////////////////////////////////////// */
+span{
+    pointer-events: none;/*faz com que o mouse ignore o span e vá direto ao campo input*/
+    color: gray;
+    position: absolute;
+    transition: 0.3s;
+}
+.grupo-input input:focus~span,
+.grupo-input input:valid~span {
+    font-size: .75rem;
+    transform: translateY(-20px);
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
